@@ -47,6 +47,8 @@ le = pd.DataFrame({
     'Contact Numbers': [+19199498424, +19199498424, +19199498424]
 })
 
+row.names(le) <- NULL
+
 le[['Lead Engineers', 'Contact Numbers']]
 
 #Interactive checkbox
