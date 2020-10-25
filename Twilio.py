@@ -10,7 +10,7 @@ from twilio.rest import Client
 # Your Account SID from twilio.com/console
 account_sid = "AC2bf09b1e538b1d9094430a7193e5e51f"
 # Your Auth Token from twilio.com/console
-auth_token  = "b6a81c60b866a329e2612b69d84824d1"
+auth_token  = "34801aa80b890b0579c1c1064351d580"
 
 client = Client(account_sid, auth_token)
 
@@ -53,7 +53,7 @@ if st.button('Text'):
     message = client.messages.create(
         to="+19199498424",
         from_="+14158424144",
-        body="")
+        body="alert")
 
     print(message.sid)
     print("numberTexted")
