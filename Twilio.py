@@ -59,7 +59,7 @@ option = st.selectbox(
 
 #sidebar oganization
 option = st.sidebar.selectbox(
-    'Which number do you like best?',
+    'Which number do you like best of ths?',
      df['first column'])
 
 'You selected:', option
