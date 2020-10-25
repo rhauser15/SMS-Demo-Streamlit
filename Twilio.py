@@ -66,6 +66,6 @@ if st.button('Text'):
 #sidebar oganization
 option = st.sidebar.selectbox(
     'Lead Engineer on-Call',
-     le['Lead Engineers'])
+     le[0])
 
 'Engineer:', option
