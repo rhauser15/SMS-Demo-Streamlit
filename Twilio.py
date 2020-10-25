@@ -28,7 +28,7 @@ st.write('Current Geolocation of Base stations and satellites')
 
 #Plotting map data
 map_data = pd.DataFrame(
-    np.random.randn(1000, 2) / [1000, 1000] + [37.76, -122.4],
+    np.random.randn(10000, 2) / [50, 50] + [37.76, -122.4],
     columns=['lat', 'lon'])
 
 st.map(map_data)
@@ -51,11 +51,11 @@ le
 #Interactive checkbox
 if st.button('Text'):
     #message = client.messages.create(
-#        to="+19199498424",
+    #    to="+19199498424",
     #    from_="+14158424144",
-#        body="alert")
+    #    body="alert")
 
-#    print(message.sid)
+    #print(message.sid)
     print("numberTexted")
 
 
