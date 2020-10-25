@@ -58,12 +58,6 @@ if st.checkbox('Send Text'):
     print(message.sid)
 
 
-#slect checkbox
-option = st.selectbox(
-    'Which number do you like best?',
-     df['first column'])
-
-'You selected: ', option
 
 
 #sidebar oganization
