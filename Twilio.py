@@ -44,7 +44,7 @@ df
 
 le = pd.DataFrame({
     'Lead Engineers': ["Roger", "Ted", "Tyrell"],
-    'Conact Numbers': [+19199498424, +19199498424, +19199498424]
+    'Contact Numbers': [+19199498424, +19199498424, +19199498424]
 })
 
 st.table(le[['Lead Engineers', 'Contact Numbers']])
