@@ -20,7 +20,7 @@ message = client.messages.create(
     body="Hello from Python!")
 
 print(message.sid)
-python send_sms.py
+
 
 
 ####User design###
