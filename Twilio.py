@@ -47,9 +47,9 @@ le = pd.DataFrame({
     'Contact Numbers': [+19199498424, +19199498424, +19199498424]
 })
 
-st.table(le.to_string(index=False))
+le.set_index('Lead Engineers', inplace=True)
 
-le[['Lead Engineers', 'Contact Numbers']]
+le
 
 #Interactive checkbox
 if st.button('Text'):
