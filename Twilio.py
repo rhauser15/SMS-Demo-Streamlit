@@ -34,11 +34,17 @@ map_data = pd.DataFrame(
 st.map(map_data)
 
 df = pd.DataFrame({
-  'first column': [1, 2, 3, 4],
-  'second column': [10, 20, 30, 40]
+  'Total Satellites Deployed': [516],
+  'Satellites Up': [516],
+  'Satellites Down': [0]
 })
 
 df
+
+le = pd.Datafame({
+    'Lead Engineers': ["Roger", "Ted", "Tyrell"],
+    'Conact Numbers': [+19199498424, +19199498424, +19199498424]
+})
 #Interactive checkbox
 if st.checkbox('Send Text'):
     message = client.messages.create(
