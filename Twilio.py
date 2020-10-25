@@ -52,8 +52,8 @@ le
 if st.checkbox('Send Text'):
     message = client.messages.create(
         to="+19199498424",
-        from_="+14158424144",
-        body="Hello from Python!")
+        from_="+19199498424",
+        body="")
 
     print(message.sid)
 
