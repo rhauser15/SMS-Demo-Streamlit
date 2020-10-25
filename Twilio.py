@@ -57,14 +57,15 @@ le2 = pd.DataFrame({
 })
 
 #Interactive checkbox
-if st.button('Text'):
+if st.button('Sattelite Down Test'):
     #message = client.messag'Lead Engineers's.create(
     #    to="+19199498424",
     #    from_="+14158424144",
     #    body="alert")
 
     #print(message.sid)
-    print("numberTexted")
+    print(leEngineer + "Texted")
+    St.write(leEngineer + "Texted")
 
 
 
@@ -73,4 +74,5 @@ option = st.sidebar.selectbox(
     'Lead Engineer on-Call',
      le2['Lead Engineers'])
 
+leEngineer = option
 'Engineer:', option
