@@ -49,13 +49,13 @@ le = pd.DataFrame({
 le
 
 #Interactive checkbox
-if if st.button('Text'):
-    message = client.messages.create(
-        to="+19199498424",
-        from_="+14158424144",
-        body="")
+if st.button('Text'):
+    #message = client.messages.create(
+    #    to="+19199498424",
+    #    from_="+14158424144",
+    #    body="")
 
-    print(message.sid)
+#    print(message.sid)
     print("numberTexted")
 
 
