@@ -51,9 +51,14 @@ le.set_index('Lead Engineers', inplace=True)
 
 le
 
+le2 = pd.DataFrame({
+    'Lead Engineers': ["Roger", "Ted", "Tyrell"],
+    'Contact Numbers': [+19199498424, +19199498424, +19199498424]
+})
+
 #Interactive checkbox
 if st.button('Text'):
-    #message = client.messages.create(
+    #message = client.messag'Lead Engineers's.create(
     #    to="+19199498424",
     #    from_="+14158424144",
     #    body="alert")
@@ -66,6 +71,6 @@ if st.button('Text'):
 #sidebar oganization
 option = st.sidebar.selectbox(
     'Lead Engineer on-Call',
-     le[0])
+     le2['Lead Engineers'])
 
 'Engineer:', option
