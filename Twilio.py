@@ -47,7 +47,7 @@ le = pd.DataFrame({
     'Contact Numbers': [+19199498424, +19199498424, +19199498424]
 })
 
-row.names(le) <- NULL
+le.to_string(index=False)
 
 le[['Lead Engineers', 'Contact Numbers']]
 
