@@ -14,42 +14,17 @@ auth_token  = "b6a81c60b866a329e2612b69d84824d1"
 
 client = Client(account_sid, auth_token)
 
-message = client.messages.create(
-    to="+19199498424",
-    from_="+14158424144",
-    body="Hello from Python!")
 
-print(message.sid)
 
 
 
 ####User design###
-st.title('My Motherfucking stupid Twilio Demo')
+st.title('Starlink Monitoring')
 
-st.write('Test2')
+st.write('Current Geolocation of Base stations and satellites')
 
-#making a table
-st.write("Here's our first attempt at using data to create a table:")
-st.write(pd.DataFrame({
-    'first column': [1, 2, 3, 4],
-    'second column': [10, 20, 30, 40]
-}))
 
-#magic commands??
 
-df = pd.DataFrame({
-  'first column': [1, 2, 3, 4],
-  'second column': [10, 20, 30, 40]
-})
-
-df
-
-#Draw a line chart
-chart_data = pd.DataFrame(
-     np.random.randn(20, 3),
-     columns=['a', 'b', 'c'])
-
-st.line_chart(chart_data)
 
 #Plotting map data
 map_data = pd.DataFrame(
@@ -60,12 +35,13 @@ st.map(map_data)
 
 
 #Interactive checkbox
-if st.checkbox('Show dataframe'):
-    chart_data = pd.DataFrame(
-       np.random.randn(20, 3),
-       columns=['a', 'b', 'c'])
+if st.checkbox('Send Text'):
+    message = client.messages.create(
+        to="+19199498424",
+        from_="+14158424144",
+        body="Hello from Python!")
 
-    st.line_chart(chart_data)
+    print(message.sid)
 
 
 #slect checkbox
