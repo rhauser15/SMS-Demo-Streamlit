@@ -4,7 +4,26 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
+##demo send messages
+from twilio.rest import Client
 
+# Your Account SID from twilio.com/console
+account_sid = "AC2bf09b1e538b1d9094430a7193e5e51f"
+# Your Auth Token from twilio.com/console
+auth_token  = "81c00a0f101c6bfe0ba416df6006961d"
+
+client = Client(account_sid, auth_token)
+
+message = client.messages.create(
+    to="+19199498424",
+    from_="+15017250604",
+    body="Hello from Python!")
+
+print(message.sid)
+python send_sms.py
+
+
+####User design###
 st.title('My Motherfucking stupid Twilio Demo')
 
 st.write('Test2')
