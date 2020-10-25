@@ -33,7 +33,12 @@ map_data = pd.DataFrame(
 
 st.map(map_data)
 
+df = pd.DataFrame({
+  'first column': [1, 2, 3, 4],
+  'second column': [10, 20, 30, 40]
+})
 
+df
 #Interactive checkbox
 if st.checkbox('Send Text'):
     message = client.messages.create(
