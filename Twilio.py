@@ -47,7 +47,7 @@ le = pd.DataFrame({
     'Conact Numbers': [+19199498424, +19199498424, +19199498424]
 })
 
-st.table(le)
+st.table(le.drop('col1', axis=1))
 
 #Interactive checkbox
 if st.button('Text'):
