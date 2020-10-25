@@ -33,6 +33,7 @@ map_data = pd.DataFrame(
 
 st.map(map_data)
 
+#Chart
 df = pd.DataFrame({
   'Total Satellites Deployed': [516],
   'Satellites Up': [516],
