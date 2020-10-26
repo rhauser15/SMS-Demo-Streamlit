@@ -10,13 +10,14 @@ from twilio.rest import Client
 # Your Account SID from twilio.com/console
 account_sid = "AC2bf09b1e538b1d9094430a7193e5e51f"
 # Your Auth Token from twilio.com/console
-auth_token  = "34801aa80b890b0579c1c1064351d580"
+auth_token  = "xxx"
 
 client = Client(account_sid, auth_token)
 
 leEngineer = "Roger"
-satUp = 0
-satDown = 516
+satUp = 516
+satDown = 0
+i = 0
 
 
 
@@ -29,10 +30,11 @@ st.write('Current Geolocation of Base stations and satellites')
 
 
 #Plotting map data
-map_data = pd.DataFrame(
-    np.random.randn(516, 2) * [20,45] + [0, 0],
-    columns=['lat', 'lon'])
-st.map(map_data)
+if i == 0:
+    map_data = pd.DataFrame(
+        np.random.randn(516, 2) * [20,45] + [0, 0],
+        columns=['lat', 'lon'])
+    st.map(map_data)
 
 
 #Chart
@@ -60,6 +62,7 @@ le2 = pd.DataFrame({
 
 #Interactive checkbox
 if st.button('Sattelite Down Test'):
+    i=i+1
     #message = client.messag'Lead Engineers's.create(
        #to="+19199498424",
       # from_="+14158424144",
