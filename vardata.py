@@ -10,5 +10,5 @@ map_data = pd.DataFrame(
     columns=['lat', 'lon'])
 
 gaus_data = pd.DataFrame(
-    np.random.randn(516, 2)
+    np.random.randn(516, 2),
     columns=['lat', 'lon'])
