@@ -65,7 +65,7 @@ if st.button('Sattelite Down Test'):
 
     #print(message.sid)
     print(leEngineer + "Texted")
-    St.write(leEngineer + "Texted")
+    st.write(leEngineer + "Texted")
 
 
 
