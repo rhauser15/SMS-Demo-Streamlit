@@ -6,7 +6,7 @@ import pandas as pd
 
 #Plotting map data
 map_data = pd.DataFrame(
-    np.random.randn(516, 2) * [30,45] + [0, 0],
+    np.random.randn(516, 2) / [.30,.45] + [0, 0],
     columns=['lat', 'lon'])
 
 gaus_data = pd.DataFrame(
