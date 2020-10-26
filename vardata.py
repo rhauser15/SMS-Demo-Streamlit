@@ -11,4 +11,4 @@ map_data = pd.DataFrame(
 
 gaus_data = pd.DataFrame(
     np.random.randn(100000),
-    columns=['lat')
+    columns=['lat'])
