@@ -30,7 +30,7 @@ st.write('Current Geolocation of Base stations and satellites')
 
 #Plotting map data
 map_data = pd.DataFrame(
-    np.random.randn(516, 2) / [200, 1] + [34.76, -122.4],
+    np.random.randn(516, 2) / [1000, 10] + [34.76, -122.4],
     columns=['lat', 'lon'])
 
 st.map(map_data)
