@@ -3,6 +3,8 @@ import streamlit as st
 # working with sample data.
 import numpy as np
 import pandas as pd
+from vardata import *
+from Config import *
 
 ##demo send messages
 from twilio.rest import Client
@@ -17,7 +19,7 @@ client = Client(account_sid, auth_token)
 leEngineer = "Roger"
 satUp = 516
 satDown = 0
-from vardata import *
+
 
 
 
