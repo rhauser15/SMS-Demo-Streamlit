@@ -17,7 +17,7 @@ client = Client(account_sid, auth_token)
 leEngineer = "Roger"
 satUp = 516
 satDown = 0
-i = 0
+from vardata import *
 
 
 
@@ -29,12 +29,8 @@ st.write('Current Geolocation of Base stations and satellites')
 
 
 
-#Plotting map data
-if i == 0:
-    map_data = pd.DataFrame(
-        np.random.randn(516, 2) * [20,45] + [0, 0],
-        columns=['lat', 'lon'])
-    st.map(map_data)
+
+st.map(map_data)
 
 
 #Chart
@@ -62,7 +58,6 @@ le2 = pd.DataFrame({
 
 #Interactive checkbox
 if st.button('Sattelite Down Test'):
-    i=i+1
     #message = client.messag'Lead Engineers's.create(
        #to="+19199498424",
       # from_="+14158424144",
