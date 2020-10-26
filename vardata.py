@@ -6,5 +6,5 @@ import pandas as pd
 
 #Plotting map data
 map_data = pd.DataFrame(
-    np.random.randn(516, 2) * [20,45] + [0, 0],
+    np.random.randn(516, 2) * [20,90] + [0, -45],
     columns=['lat', 'lon'])
