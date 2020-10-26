@@ -32,7 +32,7 @@ st.write('Current Geolocation of Base stations and satellites')
 st.write('Tokens are:  '+ account_sid +" " + auth_token)
 
 
-
+map_data
 st.map(map_data)
 
 
