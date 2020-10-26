@@ -33,7 +33,8 @@ st.write('Tokens are:  '+ account_sid +" " + auth_token)
 
 
 map_data
-gaus_data
+gaus_data.max()
+gaus_datta.min()
 st.map(map_data)
 
 
