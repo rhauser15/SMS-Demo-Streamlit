@@ -10,9 +10,10 @@ from Config import *
 from twilio.rest import Client
 
 # Your Account SID from twilio.com/console
-account_sid = "AC2bf09b1e538b1d9094430a7193e5e51f"
+account_sid = "xx"
 # Your Auth Token from twilio.com/console
 auth_token  = "xxx"
+
 
 client = Client(account_sid, auth_token)
 
@@ -28,7 +29,7 @@ st.title('Starlink Monitoring')
 
 st.write('Current Geolocation of Base stations and satellites')
 
-
+st.write('Tokens are:  '+ account_sid +" " + auth_token)
 
 
 
