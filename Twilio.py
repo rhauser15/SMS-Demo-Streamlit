@@ -15,6 +15,8 @@ auth_token  = "34801aa80b890b0579c1c1064351d580"
 client = Client(account_sid, auth_token)
 
 leEngineer = "Roger"
+satUp = 0
+satDown = 516
 
 
 
@@ -28,7 +30,7 @@ st.write('Current Geolocation of Base stations and satellites')
 
 #Plotting map data
 map_data = pd.DataFrame(
-    np.random.randn(1000, 2) / [.05, .05] + [37.76, -122.4],
+    np.random.randn(516, 2) / [.05, 1] + [37.76, -122.4],
     columns=['lat', 'lon'])
 
 st.map(map_data)
@@ -36,8 +38,8 @@ st.map(map_data)
 #Chart
 df = pd.DataFrame({
   'Total Satellites Deployed': [516],
-  'Satellites Up': [516],
-  'Satellites Down': [0]
+  'Satellites Up': [satUp],
+  'Satellites Down': [satDown]
 })
 
 df
@@ -59,12 +61,12 @@ le2 = pd.DataFrame({
 #Interactive checkbox
 if st.button('Sattelite Down Test'):
     #message = client.messag'Lead Engineers's.create(
-    #    to="+19199498424",
-    #    from_="+14158424144",
-    #    body="alert")
+       #to="+19199498424",
+      # from_="+14158424144",
+      # body="alert")
 
     #print(message.sid)
-    print(leEngineer + "Texted")
+    print(leEngineer + " Texted")
     st.write(leEngineer + "Texted")
 
 
