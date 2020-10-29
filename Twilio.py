@@ -71,7 +71,7 @@ if st.button('Sattelite Down Test'):
     st.write = (satDown," Satellite(s) are Down")
     print(message.sid)
     print(leEngineer + " has been noified")
-    st.write("Roger has been noified")
+    st.write(leEngineer + 'Roger has been noified')
 
 
 
