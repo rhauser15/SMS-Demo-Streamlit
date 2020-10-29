@@ -32,9 +32,7 @@ st.write('Current Geolocation of Base stations and satellites')
 st.write('Tokens are:  '+ account_sid +" " + auth_token)
 
 
-map_data
-st.write(gaus_data.max())
-st.write(gaus_data.min())
+
 st.map(map_data)
 
 
