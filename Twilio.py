@@ -61,7 +61,7 @@ le2 = pd.DataFrame({
 
 #Interactive checkbox
 if st.button('Sattelite Down Test'):
-    message = client.messag'Lead Engineers's.create(
+    message = client.messages.create(
         to="+19199498424",
         from_="+12052735082",
         body="alert")
