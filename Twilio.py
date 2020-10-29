@@ -67,11 +67,11 @@ if st.button('Sattelite Down Test'):
         body="alert")
 
 
-    st.write = ( '1 Satellite(s) are Down')
+
     print(message.sid)
     print(leEngineer + " has been noified")
 
-    st.write('Roger has been notified')
+    st.write('1 Satellite(s) are down. Roger has been notified')
 
 
 
