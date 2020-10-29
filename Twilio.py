@@ -29,7 +29,7 @@ st.title('Starlink Monitoring')
 
 st.write('Current Geolocation of Base stations and satellites')
 
-st.write('Tokens are:  '+ account_sid +" " + auth_token)
+
 
 
 
@@ -65,7 +65,8 @@ if st.button('Sattelite Down Test'):
         to="+19199498424",
         from_="+12052735082",
         body="alert")
-
+    satUp = satUp - 1
+    satDown = satDown + 1
     print(message.sid)
     print(leEngineer + " has been noified")
 
