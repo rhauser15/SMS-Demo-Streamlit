@@ -66,7 +66,8 @@ if st.button('Sattelite Down Test'):
         from_="+12052735082",
         body="alert")
 
-    
+
+    st.write = ( '1 Satellite(s) are Down')
     print(message.sid)
     print(leEngineer + " has been noified")
 
