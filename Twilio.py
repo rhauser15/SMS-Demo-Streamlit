@@ -10,9 +10,9 @@ from Config import *
 from twilio.rest import Client
 
 # Your Account SID from twilio.com/console
-account_sid = "xx"
+
 # Your Auth Token from twilio.com/console
-auth_token  = "xxx"
+
 
 
 client = Client(account_sid, auth_token)
