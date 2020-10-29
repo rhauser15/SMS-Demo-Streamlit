@@ -67,7 +67,7 @@ if st.button('Sattelite Down Test'):
         body="alert")
 
     print(message.sid)
-    print(leEngineer + " Texted")
+    print(leEngineer + " has been noified")
 
 
 
