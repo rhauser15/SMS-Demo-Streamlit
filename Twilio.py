@@ -71,7 +71,7 @@ if st.button('Sattelite Down Test'):
     st.write = (satDown," Satellite(s) are Down")
     print(message.sid)
     print(leEngineer + " has been noified")
-    #st.write('Roger has been noified')
+    st.write('Roger has been noified')
 
 
 
@@ -82,4 +82,3 @@ option = st.sidebar.selectbox(
      le2['Lead Engineers'])
 
 leEngineer = option
-'Engineer:', option
