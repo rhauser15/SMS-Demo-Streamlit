@@ -69,6 +69,7 @@ if st.button('Sattelite Down Test'):
     satDown = satDown + 1
     print(message.sid)
     print(leEngineer + " has been noified")
+    st.write(leEngineer + " has been noified")
 
 
 
